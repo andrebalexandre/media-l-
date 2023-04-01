@@ -15,16 +15,20 @@
         .quadrado{
             width: 200px;
             height: 200px;
-            background-color: yellow;
             margin: 20px;
         }
 
-        @media screen and (min-width: 600px) and (max-width: 900px){
+        @media screen and (min-width: 400px) and (max-width: 900px){
             .retangulo{
                 flex-direction: column;
             }
-            .quadrado{
-                background-color: brown;
+            .quadrado{}
+
+            img
+            {
+              display: flex;
+              justify-content: space-between;            
+             width: 150px;  
             }
         }
 
@@ -32,9 +36,15 @@
 </head>
 <body>
     <div class="retangulo">
-        <div class="quadrado"></div>
-        <div class="quadrado"></div>
-        <div class="quadrado"></div>
+        <div class="quadrado">
+            <img src="fusca.jfif" width="250px">
+        </div>
+        <div class="quadrado">
+            <img src="dodge charger.webp" width="250px">
+        </div>
+        <div class="quadrado">
+            <img src="corolla.jpg" width="250px">
+        </div>
     </div>
 
 </body>
