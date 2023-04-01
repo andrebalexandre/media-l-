@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exemplo query</title>
+
+    <style>
+        .retangulo{
+            background-color: aquamarine;
+            display: flex;
+            flex-direction: row;
+        }
+        .quadrado{
+            width: 200px;
+            height: 200px;
+            background-color: yellow;
+            margin: 20px;
+        }
+
+        @media screen and (min-width: 600px) and (max-width: 900px){
+            .retangulo{
+                flex-direction: column;
+            }
+            .quadrado{
+                background-color: brown;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="retangulo">
+        <div class="quadrado"></div>
+        <div class="quadrado"></div>
+        <div class="quadrado"></div>
+    </div>
+
+</body>
+</html>
